@@ -78,4 +78,4 @@ Print your result in the console.
 |**CBL**|**SB**|**CBR**|
 
 **C** = corner, **S** = side, **T** = top, **B** = bottom, **L** = left, **R** = right and **IN** = inside.
-For more information you can see [CellType](../blob/master/src/green_vs_red/CellType) emun. 
+For more information you can see [CellType](https://github.com/sonikvvv/Green-vs-Red/blob/master/src/green_vs_red/CellType.java) emun. 
