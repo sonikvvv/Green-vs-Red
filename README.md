@@ -1,9 +1,9 @@
 # Green-vs-Red
 
 ## Description:
-'Green vs. Red' is a game played on a 2D grid that in theory can be infinite (in our case we will assume that x <= y < 1 000).
+'Green vs. Red' is a game played on a 2D grid that in theory can be infinite (in our case we will assume that `x` <= `y` < `1 000`).
 
-Each cell on this grid can be either green (represented by 1) or red (represented by 0). The game always receives an initial state of the grid which we will call 'Generation Zero'. After that a set of 4 rules are applied across the grid and those rules form the next generation.
+Each cell on this grid can be either green (represented by `1`) or red (represented by `0`). The game always receives an initial state of the grid which we will call 'Generation Zero'. After that a set of 4 rules are applied across the grid and those rules form the next generation.
 
 ## Rules that create the next generation:
 1.	Each red cell that is surrounded by exactly 3 or exactly 6 green cells will also become green in the next generation.
@@ -20,8 +20,8 @@ Write the game in a way that uses several classes, good naming convention and do
 
 ## Task:
 * Create a program that accepts:
-* The size of our grid - x, y (x being the width and y being the height)
-* Then the next y lines should contain strings (long x characters) created by 0s and 1s which will 
+* The size of our grid - x, y (`x` being the width and `y` being the height)
+* Then the next `y` lines should contain strings (long `x` characters) created by `0s` and `1s` which will 
 represent the 'Generation Zero' state and help us build the grid.
 * The last arguments to the program should be coordinates (x1 and y1) and the number N.
 
@@ -56,3 +56,24 @@ Print your result in the console.
 2,2, 15
 # expected result: 14
 ```
+
+## Tables:
+|i - 1,j - 1|i - 1, j|i, j + 1|
+|i,j - 1|i, j|i, j + 1|
+|i + 1,j - 1|i  + 1, j|i, j + 1|
+
+- All * cell neighbours with their coordinates.
+
+|--|-0|-+|
+|0-|00|0+|
+|+-|+0|++|
+
+**+** Stands for + 1. **-** Stands for - 1 and **0** for no change.
+
+|CTL|ST	|CTR|
+|SL	|IN	|SR|
+|CBL|SB	|CBR|
+
+**C** = corner, **S** = side, **T** = top, **B** = bottom, **L** = left, **R** = right and **IN** = inside.
+For more information you can see [CellType] emun. 
+[CellType]: ../blob/master/src/green_vs_red/CellType.java
