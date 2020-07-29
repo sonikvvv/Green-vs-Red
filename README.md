@@ -59,18 +59,21 @@ Print your result in the console.
 
 ## Tables:
 |i - 1,j - 1|i - 1, j|i, j + 1|
+|---|---|---|
 |i,j - 1|i, j|i, j + 1|
 |i + 1,j - 1|i  + 1, j|i, j + 1|
 
 - All * cell neighbours with their coordinates.
 
 |--|-0|-+|
+|---|---|---|
 |0-|00|0+|
 |+-|+0|++|
 
 **+** Stands for + 1. **-** Stands for - 1 and **0** for no change.
 
 |CTL|ST	|CTR|
+|---|---|---|
 |SL	|IN	|SR|
 |CBL|SB	|CBR|
 
